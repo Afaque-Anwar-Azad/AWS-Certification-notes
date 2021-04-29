@@ -1,0 +1,103 @@
+Date :- 29-04-2021
+Notes:
+	AWS Cloud Practitioner exam requires skills and knowledge to effectively demonstrate and overall understanding of the AWS Cloud, independent of
+	 specific technical roles. The certification exam can be taken at the test center or through online proctored exam.
+
+	Cloud computing is the on demand delivery of IIT resources over the Internet with pay as you go price. Instead of buying online and 
+	maintaining physical data centers and servers you can access the resources and services as needed from a cloud provider like Amazon Web Services.
+
+	Different types of cloud service providers are :- AWS,GCP, IBM Cloud etc.
+
+	AWS offers a wide range of services for every business whether it is small or large, starting with basic elements, like compute, storage, and 
+	network security tools, through complex solutions like blockchain, machine learning, or artificial intelligence, and robot development platforms,
+	 all the way through very specialized tool sets, like video production management systems, and orbital satellites you can rent by the minute.
+
+	What is Client Server Model?
+•	In computing, a client can be a web browser or a desktop application that interact or make request to computer servers a server can be services 
+	such as Amazon EC2 a type of virtual server.
+ 
+	There are three types of cloud computing deployment models:
+•	Cloud-Based Deployment
+•	On-Premises Deployment
+•	Hybrid Deployment
+	Some Benefits of using cloud computing:
+•	only pay for the computing resources you use instead of investing heavily in data centers and servers before you know how you are going to use them.
+•	It gives the flexibility to focus less on running and maintaining data centers and focus more on the applications and customers.
+•	Increase the speed and agility because we can you quickly develop and deploy applications.
+•	We can get global and online in minutes.
+	What is Devops ? 
+•	Devops is the practice of operations and development engineers practicing together in the enter service life cycle from design through the 
+	development process to production support.
+	The idea behind using the devops is to reduce the latency that arises during the software development life cycle such as when a developer builts 
+	an application and sends it for testing then the testing team does all the testing and may return with some errors. All of this process can take 
+	some days or more. Which can lead to loss in business. Devops introduces a new practice where these development and operations team work together 
+	allowing the flexibility to develop and test simultaneously and make the changes and improvise accordingly. which saves a lot of time.
+
+Date : 30-04-2021
+Notes:
+
+1. Amazon Elastic Compute Cloud (Amazon EC2) provides secure, resizable compute capacity in the cloud as Amazon EC2 instances.
+ 
+2. Amazon EC2 instance types:-
+	2.1 General Purpose Instance :- General purpose instances provide a balance of compute,memory and networking resources.
+		We can use them for different purposes such as applications servers, gaming servers, backend servers for 
+		enterprise applications, small and medium databases.
+	2.2 Compute optimized instances :- Compute optimized instances are ideal for compute-bound applications that benefit from
+		high-performance processors. Like general purpose instances, you can use compute optimized instances for worloads
+		such as web, application and gaming servers.
+	2.3 Memory optimized instances :- Memory optimized instances are designed to deliver fast performance for worloads that process large
+		datasets in memory.
+	2.4 Accelerated computing instances :- Accelerated computing instances use hardware accelerators, or coprocessors, to perform some 
+		functions more efficiently than is possible in software running on CPUs. Examples of these functions include 
+		graphics processing, and data pattern matching.
+	2.5 Storage Optimized instances:- Storage optimized instances are designed for workloads that require high, sequential read 
+		and write access to large datasets on local storage. Examples of workloads suitable for storage optimized instances
+		 include distributed file systems, data warehousing applications.
+
+
+3. Amazon EC2 Pricing :- With Amazon EC2, you pay only for the compute time that you use. Amazon EC2 offers a variety of pricing options 
+	for different use cases.
+	3.1 On-Demand :- On-Demand Instances are ideal for short-term, irregular workloads that cannot be interrupted. No upfront costs
+		 or minimum contracts apply. The instances run continuously until you stop them, and you pay for only the compute time you use.
+	3.2 Amazon EC2 Savings Plans :- AWS offers Savings Plans for several compute services, including Amazon EC2. Amazon EC2 Savings 
+		Plans enable you to reduce your compute costs by committing to a consistent amount of compute usage for a 1-year or 3-year term.
+		 This term commitment results in savings of up to 72% over On-Demand costs.
+	3.3 Reserved Instances :- Reserved Instances are a billing discount applied to the use of On-Demand Instances in your account. 
+		You can purchase Standard Reserved and Convertible Reserved Instances for a 1-year or 3-year term, and Scheduled 
+		Reserved Instances for a 1-year term. You realize greater cost savings with the 3-year option.
+	3.4 Spot Instances :- Spot Instances are ideal for workloads with flexible start and end times, or that can withstand interruptions.
+		 Spot Instances use unused Amazon EC2 computing capacity and offer you cost savings at up to 90% off of On-Demand prices.
+	3.5 Dedicated Hosts :- Dedicated Hosts are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use. 
+
+4. Scalability of EC2 :- AWS provides a special feature for scalability issues i.e Amazon EC2 Auto Scaling.
+
+5. When you create an Auto Scaling group, you can set the minimum number of Amazon EC2 instances. The minimum capacity is the 
+	number of Amazon EC2 instances that launch immediately after you have created the Auto Scaling group. In this example, the Auto Scaling group
+ 	has a minimum capacity of one Amazon EC2 instance.
+	Next, you can set the desired capacity at two Amazon EC2 instances even though your application needs a minimum of a single Amazon EC2 instance to run.
+	Remember If you do not specify the desired number of Amazon EC2 instances in an Auto Scaling group, the desired capacity defaults to your minimum capacity.
+	The third configuration that you can set in an Auto Scaling group is the maximum capacity. For example, you might configure the Auto Scaling group to 
+	scale out in response to increased demand, but only to a maximum of four Amazon EC2 instances.
+
+6. Elastic Load Balancer :- Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources,
+	 such as Amazon EC2 instances. 
+
+7. A load balancer acts as a single point of contact for all incoming web traffic to your Auto Scaling group. This means that as you add or remove 
+	Amazon EC2 instances in response to the amount of incoming traffic, these requests route to the load balancer first. Then, the requests spread across
+	 multiple resources that will handle them. For example, if you have multiple Amazon EC2 instances, Elastic Load Balancing distributes the workload across
+	 the multiple instances so that no single instance has to carry the bulk of it.
+
+8. Monolithic Applications(Bad Approach for general purpose) :- Suppose that you have an application with tightly coupled components. These components might 
+	include databases, servers, the user interface, business logic, and so on. This type of architecture can be considered a monolithic application. 
+	In this approach to application architecture, if a single component fails, other components fail, and possibly the entire application fails.
+
+9. Microservices(Good Approach for general purpose) :- In a microservices approach, application components are loosely coupled. In this case, if a 
+	single component fails, the other components continue to work because they are communicating with each other. 
+	The loose coupling prevents the entire application from failing. 
+	To help maintain application availability when a single component fails, you can design your application through a microservices approach.
+
+ 
+
+
+
+
