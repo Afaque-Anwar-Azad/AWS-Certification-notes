@@ -96,6 +96,127 @@ Notes:
 	The loose coupling prevents the entire application from failing. 
 	To help maintain application availability when a single component fails, you can design your application through a microservices approach.
 
+
+Date : 01-05-2021
+Notes:
+
+* Availability Zones: group of logical data centers are known as Availability Zone. And each AWS Region consists of multiple,isolated and physically 
+	separated availability zones within a geographical area. Availability Zones are located tens of miles apart from each other. This is close 
+	enough to have them low latency between Availability Zones.
+
+* When determining the right Region for your services, data, and applications, consider the following four business factors.
+	* Compliance with data governance and legal requirements
+	* Proximity to your customers
+	* Available services within a Region
+	* Pricing
+
+* An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
+
+* Ways to interact with AWS Services
+	* The AWS Management Console is a web-based interface for accessing and managing AWS services. You can quickly access recently used 
+	  services and search for other services by name or keyword.
+	* To save time when making API requests, you can use the AWS Command Line Interface (AWS CLI). AWS CLI enables you to control 
+	  multiple AWS services directly from the command line within one tool. By using AWS CLI, you can automate the actions that 
+	  your services and applications perform through scripts.  
+
+
+* AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+	* Adjust capacity
+	* Load balancing
+	* Automatic scaling
+	* Application health monitoring
+
+
+
+Date 02-05-2021
+Notes:
+
+* Amazon Virtual Private Cloud, A VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a 
+  virtual network that you define. These resources can be public facing so they have access to the internet, or private with no internet 
+  access, usually for backend services like databases or application servers. 
+	* To allow public traffic from the internet to access your VPC, you attach an internet gateway to the VPC.
+	* To access private resources in a VPC, you can use a virtual private gateway. 
+
+* AWS Direct Connect is a service that enables you to establish a dedicated private connection between your data center and a VPC.  
+
+* A subnet is a section of a VPC in which you can group resources based on security or operational needs. Subnets can be public or private. 
+	* Public subnets contain resources that need to be accessible by the public, such as an online store’s website.
+	* Private subnets contain resources that should be accessible only through your private network, such as a database that
+	  contains customers’ personal information.
+
+* When a customer requests data from an application hosted in the AWS Cloud, this request is sent as a packet. A packet is a unit 
+  of data sent over the internet or a network. 
+
+* A network access control list (ACL) is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+  Each AWS account includes a default network ACL. When configuring your VPC, you can use your account’s default network ACL 
+  or create custom network ACLs. By default, your account’s default network ACL allows all inbound and outbound traffic, but
+  you can modify it by adding your own rules. For custom network ACLs, all inbound and outbound traffic is denied until you 
+  add rules to specify which traffic to allow. Additionally, all network ACLs have an explicit deny rule. This rule ensures 
+  that if a packet doesn’t match any of the other rules on the list, the packet is denied. 
+
+* Network ACLs perform stateless packet filtering. They remember nothing and check packets that cross the 
+  subnet border each way: inbound and outbound. 
+
+* A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance.
+  By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom 
+  rules to configure which traffic to allow or deny. If you have multiple Amazon EC2 instances within a subnet,
+  you can associate them with the same security group or use different security groups for each instance. 
+
+* Security groups perform stateful packet filtering. They remember previous decisions made for incoming packets.
+
+* DNS resolution is the process of translating a domain name to an IP address. 
+
+* Amazon Route 53 is a DNS web service. It gives developers and businesses a reliable way to route end users to
+  internet applications hosted in AWS. Amazon Route 53 connects user requests to infrastructure running in AWS. 
+  It can route users to infrastructure outside of AWS.
+
+* Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new 
+  domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other 
+  domain registrars. This enables you to manage all of your domain names within a single location.
+
+
+
+Date 03-05-2021
+Notes: 
+
+* An instance store provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage
+  that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance.
+  When the instance is terminated, you lose any data in the instance store.
+
+* Amazon Elastic Block Store (Amazon EBS) is a service that provides block-level storage volumes that you can use with 
+  Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+  To create an EBS volume, you define the configuration (such as volume size and type) and provision it. After you create an 
+  EBS volume, it can attach to an Amazon EC2 instance.
+
+* An EBS snapshot is an incremental backup. This means that the first backup taken of a volume copies all the data. 
+  For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved. 
+  Incremental backups are different from full backups, in which all the data in a storage volume copies each 
+  time a backup occurs. The full backup includes data that has not changed since the most recent backup.
+
+* Amazon Simple Storage Service (Amazon S3) is a service that provides object-level storage. 
+  Amazon S3 stores data as objects in buckets.
+
+* With Amazon S3, you pay only for what you use. You can choose from a range of storage classes to select
+  a fit for your business and cost needs. When selecting an Amazon S3 storage class, consider these two factors:
+	* How often you plan to retrieve your data
+	* How available you need your data to be
+* Different types of Amazon S3 storage classes:
+	* S3 Standard
+	* S3 Standard-Infrequent Access (S3 Standard-IA)
+	* S3 One Zone-Infrequent Access (S3 One Zone-IA)
+	* S3 Glacier
+	* S3 Glacier Deep Archive
+
+* DynamoDB is a database. It's a serverless database. DynamoDB stores this data redundantly across availability
+  zones and mirrors the data across multiple drives under the hood for you. DynamoDB is massively scalable and
+  also highly performant. DynamoDB has a millisecond response time. Amazon DynamoDB is a key-value database service.
+
+
+
+
+
+
+
  
 
 
