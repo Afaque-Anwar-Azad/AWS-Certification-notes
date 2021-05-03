@@ -213,6 +213,44 @@ Notes:
 
 
 
+Date: 04-05-2021
+Notes:
+
+* The shared responsibility model divides into customer responsibilities and AWS responsibilities.
+
+* Customers are responsible for the security of everything that they create and put in the AWS Cloud. When using AWS services,
+  you, the customer, maintain complete control over your content. You are responsible for managing security requirements for 
+  your content, including which content you choose to store on AWS, which AWS services you use, and who has access to that content.
+  You also control how access rights are granted, managed, and revoked.
+
+* AWS is responsible for security of the cloud. AWS operates, manages, and controls the components at all layers of infrastructure. 
+  This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data 
+  centers from which services operate. 
+
+* When you first create an AWS account, you begin with an identity known as the root user. It has complete access to all
+  the AWS services and resources in the account.
+
+* An IAM user is an identity that you create in AWS. It represents the person or application that interacts with AWS services
+  and resources. It consists of a name and credentials. IAM policies enable you to customize users’ levels of access to resources.  
+
+* least privilege principle states that you help to prevent users or roles from having more permissions than needed to perform their tasks.
+
+* An IAM group is a collection of IAM users. When you assign an IAM policy to a group, all users in the group are granted 
+  permissions specified by the policy.
+
+* Multi-factor authentication :- You might have needed to provide your password and then a second form of authentication, 
+  such as a random code sent to your phone. This is an example of multi-factor authentication.In IAM, multi-factor authentication
+  (MFA) provides an extra layer of security for your AWS account.
+
+* Hands on creating an IAM account.
+
+* Hands-on - creating group and adding the user in it.
+
+* Hands-on - changing IAM policies of the user.
+
+
+
+
 
 
 
