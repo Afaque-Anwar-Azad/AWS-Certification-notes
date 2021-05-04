@@ -248,6 +248,55 @@ Notes:
 
 * Hands-on - changing IAM policies of the user.
 
+Date: 05-05-2021
+Notes:
+
+* This idea of observing systems, collecting metrics, evaluating those metrics over time, and then using them to make 
+  decisions or take actions, is what we call monitoring. 
+
+* It's important to set up monitoring in the cloud. With the elastic nature of AWS services that dynamically scale up
+  and down, you'll want to keep a close pulse on your AWS resources to ensure that your systems are running as expected. 
+
+* Amazon CloudWatch is a web service that enables you to monitor and manage various metrics and configure alarm actions 
+  based on data from those metrics.CloudWatch uses metrics to represent the data points for your resources. AWS services
+  send metrics to CloudWatch. CloudWatch then uses these metrics to create graphs automatically that show how 
+  performance has changed over time. 
+
+* With CloudWatch, you can create alarms that automatically perform actions if the value of your metric has gone above 
+  or below a predefined threshold. 
+
+* The CloudWatch dashboard feature enables you to access all the metrics for your resources from a single location. 
+  You can even customize separate dashboards for different business purposes, applications, or resources.
+
+* AWS CloudTrail records API calls for your account. The recorded information includes the identity of the API caller,
+  the time of the API call, the source IP address of the API caller, and more. You can think of CloudTrail as a “trail”
+  of breadcrumbs (or a log of actions) that someone has left behind them. With CloudTrail, you can view a complete 
+  history of user activity and API calls for your applications and resources. 
+
+* Events are typically updated in CloudTrail within 15 minutes after an API call. You can filter events by specifying 
+  the time and date that an API call occurred, the user who requested the action, the type of resource that was 
+  involved in the API call, and more.
+
+* Events are typically updated in CloudTrail within 15 minutes after an API call. You can filter events by specifying
+  the time and date that an API call occurred, the user who requested the action, the type of resource that was 
+  involved in the API call, and more.
+
+* AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in 
+  accordance with AWS best practices.
+
+* Trusted Advisor compares its findings to AWS best practices in five categories: cost optimization, performance, 
+  security, fault tolerance, and service limits. For the checks in each category, Trusted Advisor offers a list of
+  recommended actions and additional resources to learn more about AWS best practices. 
+
+* When you access the Trusted Advisor dashboard on the AWS Management Console, you can review completed checks for 
+  cost optimization, performance, security, fault tolerance, and service limits.
+  For each category:
+  * The green check indicates the number of items for which it detected no problems.
+  * The orange triangle represents the number of recommended investigations.
+  * The red circle represents the number of recommended actions.
+
+
+
 
 
 
