@@ -295,6 +295,45 @@ Notes:
   * The orange triangle represents the number of recommended investigations.
   * The red circle represents the number of recommended actions.
 
+Date: 06-05-2021
+Notes:
+
+* Amazon Elastic Block Store (Amazon EBS) is a service that provides block-level storage volumes that you can use 
+  with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS 
+  volume remains available. To create an EBS volume, you define the configuration (such as volume size and type)
+  and provision it. After you create an EBS volume, it can attach to an Amazon EC2 instance. One EBS volume can be
+  attached to one EC2 instance at a time.
+
+* An EBS snapshot is an incremental backup. This means that the first backup taken of a volume copies all the data.
+  For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved. 
+
+* Incremental backups are different from full backups, in which all the data in a storage volume copies each time 
+  a backup occurs. The full backup includes data that has not changed since the most recent backup.
+
+* Amazon Elastic File System (Amazon EFS) is a scalable file system used with AWS Cloud services and 
+  on-premises resources. As you add and remove files, Amazon EFS grows and shrinks automatically. 
+  It can scale on demand to petabytes without disrupting applications. 
+
+* Amazon EFS is a regional service. It stores data in and across multiple Availability Zones. The duplicate storage
+  enables you to access data concurrently from all the Availability Zones in the Region where a file system is located.
+  Additionally, on-premises servers can access Amazon EFS using AWS Direct Connect.
+
+* Relational databases use structured query language (SQL) to store and query data. This approach allows data to be 
+  stored in an easily understandable, consistent, and scalable way. Amazon RDS is a managed service that automates 
+  tasks such as hardware provisioning, database setup, patching, and backups. With these capabilities, you can spend 
+  less time completing administrative tasks and more time using data to innovate your applications. You can integrate 
+  Amazon RDS with other services to fulfill your business and operational needs, such as using AWS Lambda to query your
+  database from a serverless application.
+
+* Amazon RDS is available on six database engines, which optimize for memory, performance, or input/output (I/O).
+  Amazon Aurora, PostgreSQL,MySQL,Oracle
+
+* Amazon Aurora is an enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases.
+  It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases.
+  Amazon Aurora helps to reduce your database costs by reducing unnecessary input/output (I/O) operations, while ensuring that
+  your database resources remain reliable and available. Consider Amazon Aurora if your workloads require high availability. 
+  It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
+
 
 
 
