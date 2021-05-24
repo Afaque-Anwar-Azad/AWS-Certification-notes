@@ -1,0 +1,34 @@
+Date: 24.05.2021
+Notes:
+
+1. Amazon RDS
+RDS stands for Relational Database Service
+• It’s a managed DB service for DB use SQL as a query language.
+• It allows you to create databases in the cloud that are managed by AWS
+• Postgres
+• Oracle
+• MySQL
+• MariaDB
+• Oracle
+• Microsoft SQL Server
+• Aurora (AWS Proprietary database)
+
+2. RDS Read Replicas for read scalability
+• Up to 5 Read Replicas
+• Within AZ, Cross AZ or Cross Region
+
+3. RDS Multi  AZ (Disaster Recovery)
+• One DNS name – automatic app failover to standby
+• Increase availability
+• Failover in case of loss of AZ, loss of network, instance or storage failure
+
+4. RDS Backups
+• Backups are automatically enabled in RDS
+• Automated backups:
+• Daily full snapshot of the database
+• Capture transaction logs in real time
+• => ability to restore to any point in time
+• 7 days retention (can be increased to 35 days)
+• DB Snapshots:
+• Manually triggered by the user
+• Retention of backup for as long as you want
