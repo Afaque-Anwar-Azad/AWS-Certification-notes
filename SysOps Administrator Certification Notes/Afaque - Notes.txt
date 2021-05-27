@@ -32,3 +32,26 @@ RDS stands for Relational Database Service
 • DB Snapshots:
 • Manually triggered by the user
 • Retention of backup for as long as you want
+
+
+Date: 26/05/2021
+Notes:
+
+1. Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. 
+
+2. TTL (Time to Live). When we request for some address from Route 53 then we recieve an 
+ address from the Route 53 with a TTL time. This TTL time is the time for which the address
+ is cached in the client browser. After the TTL expires then if the client requires again then 
+ the client will again request it again send a DNS request to Amazon Route 53
+
+3. Amazon Routing Policies
+a. Simple :- Maps a hostname to another hostname. Use when you need to redirect to a single resource.
+             If multiple values are returned, a ranodm one is chosen by client.
+b. Weighted:- It lets you associate multiple resources with a single domain name(example.com) or
+              subdomain name(acme.example.com) and choose how much traffic is routed to each 
+	      resources. This can be useful for variety of purposes, including load balancing and 
+ 	      testing new versions of software.
+
+c. Latency-based routing:- If your application is hosted in multiple AWS Regions, you can improve 
+               performance for your users by serving their requests from the AWS Region that 
+               provides the lowest latency.
