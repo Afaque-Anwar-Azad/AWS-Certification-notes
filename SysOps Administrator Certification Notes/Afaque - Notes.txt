@@ -55,3 +55,34 @@ b. Weighted:- It lets you associate multiple resources with a single domain name
 c. Latency-based routing:- If your application is hosted in multiple AWS Regions, you can improve 
                performance for your users by serving their requests from the AWS Region that 
                provides the lowest latency.
+
+
+Date: 27/05/2021
+Notes:
+
+EC2 instance types:- Main ones
+
+R: applications that need a lot of RAM -in-memory caches
+C: applications that need good CPU - compute/databases
+M: applications that are balanced(think "medium") - general/web app
+I: applications that need a good local I/O(instance storage) - databases
+G: applications that need a GPU - video rendering/machine learning
+
+T2/T3- burstable instances(up to a capacity)
+T2/T3: unlimited - Unlimited burst
+
+Burstable Instances(T2/T3):
+AWS has the concept of burstable instances(T2/T3 machines)
+When the machines need to process something unexpected(a spike
+load for example), it can burst and CPU can be very good. but
+if the machine bursts, it utilizes "burst credits" and if all 
+the credits are gone, the CPU becomes BAD whereas if the 
+machine stops bursting, credits are accumulated over time.
+
+
+Shutdown behaviour: How should the instance react when shutdown
+is done using the OS. Stopped default. terimated. This is not 
+applicable for AWS console or AWS API
+
+Termination Protection: To protect against accidental termination
+in AWS console on CLI
